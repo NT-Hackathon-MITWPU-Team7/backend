@@ -7,7 +7,7 @@ const {
   getWeeklyValues,
   getYearlyValues,
 } = require("./calculations");
-const cors = require(cors);
+const cors = require("cors");
 const path = require("path");
 const chartTypes = require("./chartTypes.js");
 const express = require("express");
