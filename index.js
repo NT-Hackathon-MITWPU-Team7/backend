@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
   res.send("<h1>Hello from MIT-WPU Team 7!!</h1>");
 });
 
-app.get("/chart", (req, res) => {
+app.post("/chart", (req, res) => {
   try {
     const body = req.body;
 
