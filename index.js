@@ -7,11 +7,13 @@ const {
   getWeeklyValues,
   getYearlyValues,
 } = require("./calculations");
+const path = require("path");
 const chartTypes = require("./chartTypes.js");
 const express = require("express");
 const app = express();
 const port = 5000;
 
+app.use(express.static(path.join(__dirname, "/data")));
 app.use(express.json());
 
 app.get("/", (req, res) => {

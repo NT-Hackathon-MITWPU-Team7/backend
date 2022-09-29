@@ -2,7 +2,7 @@ const { readData } = require("./csvHandler");
 const fs = require("fs");
 
 const getValues = (year, currency) => {
-  const input = fs.readFileSync(`data/Exchange_Rate_Report_${year}.csv`);
+  const input = fs.readFileSync(`./data/Exchange_Rate_Report_${year}.csv`);
   return readData(input, currency);
 };
 
